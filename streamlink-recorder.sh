@@ -14,6 +14,7 @@ while [ true ]; do
 		--hls-live-restart \
 		--twitch-api-header="Authorization=OAuth ${TWITCH_TOKEN}" \
 		--twitch-supported-codecs=h264,h265,av1 \
+		--twitch-disable-ads \
 		$STREAM_URL $QUALITY
 	sleep ${RETRY_SECS}s
 done

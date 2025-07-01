@@ -10,6 +10,7 @@ services:
       - QUALITY=best
       # - STREAMLINK_OPTS=--twitch-proxy-playlist=https://eu.luminous.dev,https://eu2.luminous.dev,https://as.luminous.dev
       - STREAMLINK_OPTS=--twitch-supported-codecs=h264,h265,av1
+      - TWITCH_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
       # - uid=1026
       # - gid=100
     restart: unless-stopped
